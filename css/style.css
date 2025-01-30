@@ -1,17 +1,19 @@
 /*#region Body */
 body {
+    font-family: 'Raleway', sans-serif;
     background: linear-gradient(#2d3e50, #253041);
     background-attachment: fixed;
     margin: 0;
     padding: 0;
 }
+
 /*#endregion */
- 
+
 /*#region Menu*/
 .menu {
     background: #171a21;
     padding: 15px 20px;
-    box-shadow: 0px 4px 10px #00000080;
+    box-shadow: 0px 4px 10px #000000;
 }
 
 .menu nav ul {
@@ -28,6 +30,10 @@ body {
     border-radius: 5px;
 }
 
+.menu nav ul li {
+    display: inline;
+}
+
 .menu nav ul li a:hover {
     color: #ffffff;
     background: #66c0f433;
@@ -38,4 +44,27 @@ body {
     font-size: 30px;
     margin-top: 15px;
 }
+
 /*#endregion */
+
+/* #region Accueil */
+
+/* #endregion */
+
+/* #region Gabe Newell */
+.contenu_newell {
+    color: #e5eaee;
+    margin: 3rem;
+}
+
+.contenu_newell div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenu_newell img {
+    height: 300px;
+    width: 300px;
+}
+
+/* #endregion */
