@@ -1,0 +1,41 @@
+/*#region Body */
+body {
+    background: linear-gradient(#2d3e50, #253041);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+/*#endregion */
+ 
+/*#region Menu*/
+.menu {
+    background: #171a21;
+    padding: 15px 20px;
+    box-shadow: 0px 4px 10px #00000080;
+}
+
+.menu nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    color: #66c0f4;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.menu nav ul li a:hover {
+    color: #ffffff;
+    background: #66c0f433;
+}
+
+.menu h1 {
+    color: #e5eaee;
+    font-size: 30px;
+    margin-top: 15px;
+}
+/*#endregion */
