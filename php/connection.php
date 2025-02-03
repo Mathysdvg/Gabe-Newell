@@ -19,5 +19,12 @@
         </nav>
         <h1>Connection</h1>
     </section>
+    <section class="contenu">
+    <h2>Connecte toi pour suivre les actualités du site.</h2>
+    <form action="" method="post">
+        <input type="button" value="Connection">
+    </form>
+
+    </section>
 </body>
 </html>

@@ -1,5 +1,10 @@
+html {
+    min-width: 600px;
+}
+
 /*#region Body */
 body {
+    width: 100%;
     font-family: 'Raleway', sans-serif;
     background: linear-gradient(#2d3e50, #253041);
     background-attachment: fixed;
@@ -14,6 +19,7 @@ body {
     background: #171a21;
     padding: 15px 20px;
     box-shadow: 0px 4px 10px #000000;
+    text-align: center;
 }
 
 .menu nav ul {
@@ -48,23 +54,54 @@ body {
 /*#endregion */
 
 /* #region Accueil */
+.partie {
+    background-color: #2a475e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.partie h2 {
+    color: #66c0f4;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #66c0f4;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #417a9b;
+}
 
 /* #endregion */
 
-/* #region Gabe Newell */
-.contenu_newell {
-    color: #e5eaee;
-    margin: 3rem;
+/* #region Contenu */
+.contenu {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #2a475e;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    color: #ffffff;
 }
 
-.contenu_newell div {
-    display: flex;
-    flex-direction: column;
+.contenu img {
+    width: 100%;
+    border-radius: 8px;
+    border: 3px solid #66c0f4;
 }
 
-.contenu_newell img {
-    height: 300px;
-    width: 300px;
+figcaption {
+    text-align: center;
 }
 
 /* #endregion */
