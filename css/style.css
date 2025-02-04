@@ -59,7 +59,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0px 4px 10px #00000080;
+    box-shadow: 10px #00000080;
 }
 
 .partie h2 {
@@ -102,6 +102,55 @@ body {
 
 figcaption {
     text-align: center;
+}
+
+form {
+    background-color: #1b2838;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px #00000080;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    padding: 5px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="mail"] {
+    background-color: #3b5998;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    width: 75%;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #66c0f4;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #171a21;
+}
+
+form a {
+    color: #116698;
+}
+
+form a:hover {
+    color: #1ca7f7;
 }
 
 /* #endregion */

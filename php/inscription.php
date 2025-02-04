@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -20,7 +23,8 @@
         <h1>S'inscrire</h1>
     </section>
     <section class="contenu">
-    <form action="verification.php" method="post">
+        <h2>Incris toi dès maintenant</h2>
+        <form action="verification.php" method="post">
                 <label for="pseudo">Pseudo :</label>
                 <input type="text" id="pseudo" name="pseudo" required>
                 <br>
@@ -32,12 +36,9 @@
                 <label for="password">Mot de passe :</label>
                 <input type="password" id="password" name="password" required>
                 <br>
-                <input class="btn" type="submit" value="S'inscrire">
+                <input type="submit" value="S'inscrire">
+                <p>Tu as déjà un compte ? <a href="connexion.php">Se connecter</a></p>
         </form>
     </section>
 </body>
 </html>
-
-<?php
-    
-?>

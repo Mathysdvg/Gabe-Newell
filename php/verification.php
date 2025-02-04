@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +14,12 @@
             <h1>Vérification</h1>
     </section>
     <section class="contenu">
-            <h2>Bravo tu es connecter</h2>
+            <?php
+                echo("<h2>Bravo $username, tu es connecté</h2>");   
+            ?>
             <img src="../images/Tf2Nice.png" alt="Connecter">
             <a href="../html/accueil.html" class="btn">Revenir sur le site</a>
         </section>
 </body>
 </html>
+

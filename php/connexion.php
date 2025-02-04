@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    $login = false;
+    $username = "moi";
+    $password = "coucou";
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -29,13 +35,10 @@
                 <label for="password">Mot de passe :</label>
                 <input type="password" id="password" name="password" required>
                 <br>
-                <input class="btn" type="submit" value="Connexion">
+                <input type="submit" value="Connexion">
+                <p>Tu n'as pas de compte ? <a href="inscription.php">S'inscrire</a></p>
         </form>
-        <p>Tu n'as pas de compte ? <a href="inscription.php">S'inscrire</a></p>
+        
     </section>
 </body>
 </html>
-
-<?php
-
-?>
