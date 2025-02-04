@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connection</title>
+    <title>S'inscrire</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -17,20 +17,21 @@
                 <li><a href="../php/connection.php">Connection</a></li>
             </ul>
         </nav>
-        <h1>Connection</h1>
+        <h1>S'inscrire</h1>
     </section>
     <section class="contenu">
-        <h2>Connecte toi pour suivre les actualités du site.</h2>
-        <form action="" method="post">
-        <label for="pseudo">Pseudo :</label>
+    <form action="" method="post">
+                <label for="pseudo">Pseudo :</label>
                 <input type="text" id="pseudo" name="pseudo" required>
+                <br>
+                <label for="email">Email :</label>
+                <input type="mail" id="email" name="email" required>
                 <br>
                 <label for="password">Mot de passe :</label>
                 <input type="text" id="password" name="password" required>
                 <br>
-                <input type="submit" value="Connexion">
+                <input type="submit" value="S'inscrire">
         </form>
-        <p>Tu n'as pas de compte ? <a href="inscription.php">S'inscrire</a></p>
     </section>
 </body>
 </html>
