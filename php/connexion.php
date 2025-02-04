@@ -14,10 +14,10 @@
                 <li><a href="../html/gabenewell.html">Gabe Newell</a></li>
                 <li><a href="../html/valve.html">Valve</a></li>
                 <li><a href="../html/steam.html">Steam</a></li>
-                <li><a href="../php/connection.php">Connection</a></li>
+                <li><a href="../php/connexion.php">Connexion</a></li>
             </ul>
         </nav>
-        <h1>Connection</h1>
+        <h1>Connexion</h1>
     </section>
     <section class="contenu">
         <h2>Connecte toi pour suivre les actualités du site.</h2>
