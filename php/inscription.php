@@ -20,18 +20,24 @@
         <h1>S'inscrire</h1>
     </section>
     <section class="contenu">
-    <form action="" method="post">
+    <form action="verification.php" method="post">
                 <label for="pseudo">Pseudo :</label>
                 <input type="text" id="pseudo" name="pseudo" required>
+                <br>
                 <br>
                 <label for="email">Email :</label>
                 <input type="mail" id="email" name="email" required>
                 <br>
-                <label for="password">Mot de passe :</label>
-                <input type="text" id="password" name="password" required>
                 <br>
-                <input type="submit" value="S'inscrire">
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <input class="btn" type="submit" value="S'inscrire">
         </form>
     </section>
 </body>
 </html>
+
+<?php
+    
+?>

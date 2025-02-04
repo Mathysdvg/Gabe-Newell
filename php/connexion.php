@@ -21,16 +21,21 @@
     </section>
     <section class="contenu">
         <h2>Connecte toi pour suivre les actualités du site.</h2>
-        <form action="" method="post">
+        <form action="verification.php" method="post">
         <label for="pseudo">Pseudo :</label>
                 <input type="text" id="pseudo" name="pseudo" required>
                 <br>
-                <label for="password">Mot de passe :</label>
-                <input type="text" id="password" name="password" required>
                 <br>
-                <input type="submit" value="Connexion">
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <input class="btn" type="submit" value="Connexion">
         </form>
         <p>Tu n'as pas de compte ? <a href="inscription.php">S'inscrire</a></p>
     </section>
 </body>
 </html>
+
+<?php
+
+?>
