@@ -20,6 +20,25 @@ body {
     padding: 20px;
     box-shadow: 10px #00000080;
     text-align: center;
+    color: #66c0f4;
+}
+.menu nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul.user {
+    margin-left: auto;
+}
+
+.menu ul.user img {
+    background-color: #f8f8f8;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 .menu nav ul {

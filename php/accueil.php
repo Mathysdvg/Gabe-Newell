@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -12,11 +15,14 @@
     <section class="menu">
         <nav>
             <ul>
-                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="accueil.php">Accueil</a></li>
                 <li><a href="gabenewell.html">Gabe Newell</a></li>
                 <li><a href="valve.html">Valve</a></li>
                 <li><a href="steam.html">Steam</a></li>
                 <li><a href="../php/connexion.php">Connexion</a></li>
+            </ul>
+            <ul class="user">              
+                <li><a href="../php/compte.php"><img src="../images/user.png" alt="user">Mon Compte</a></li>
             </ul>
         </nav>
         <h1>Accueil</h1>
