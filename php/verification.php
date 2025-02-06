@@ -1,7 +1,10 @@
 <?php
     session_start();
-    $_SESSION["pseudo"] = $_POST["pseudo"];
-    $username = $_SESSION["pseudo"];
+    if (isset($_POST["pseudo"])) {
+        $_SESSION["pseudo"] = $_POST["pseudo"];
+        $_SESSION["login"] = true;
+    }
+    $username = isset($_SESSION["pseudo"]) ? $_SESSION["pseudo"] : "";
 ?>
 <!DOCTYPE html>
 <html lang="fr">

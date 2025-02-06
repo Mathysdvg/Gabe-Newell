@@ -19,8 +19,14 @@
                 <li><a href="../html/steam.html">Steam</a></li>
                 <li><a href="connexion.php">Connexion</a></li>
             </ul>
-            <ul class="user">              
-                <li><a href="../php/compte.php"><img src="../images/user.png" alt="user">Mon Compte</a></li>
+            <ul class="user">
+                <?php
+                    if ($isLogged) {
+                        echo ("<li><a href='../php/compte.php'><img src='../images/user.png' alt='user'>$username</a></li>");
+                    } else {
+                        echo ("<li><a href='../php/connexion.php'><img src='../images/user.png' alt='user'>Invité</a></li>");
+                    }
+                ?>
             </ul>
         </nav>
         <h1>Connexion</h1>

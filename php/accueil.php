@@ -1,5 +1,7 @@
 <?php
     session_start();
+    $username = isset($_SESSION["pseudo"]) ? $_SESSION["pseudo"] : "";
+    $isLogged = isset($_SESSION["login"]) && $_SESSION["login"] === true;
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -21,8 +23,15 @@
                 <li><a href="steam.html">Steam</a></li>
                 <li><a href="../php/connexion.php">Connexion</a></li>
             </ul>
-            <ul class="user">              
-                <li><a href="../php/compte.php"><img src="../images/user.png" alt="user">Mon Compte</a></li>
+            
+            <ul class="user">
+                <?php
+                    if ($isLogged) {
+                        echo ("<li><a href='../php/compte.php'><img src='../images/user.png' alt='user'>$username</a></li>");
+                    } else {
+                        echo ("<li><a href='../php/connexion.php'><img src='../images/user.png' alt='user'>Invité</a></li>");
+                    }
+                ?>
             </ul>
         </nav>
         <h1>Accueil</h1>
