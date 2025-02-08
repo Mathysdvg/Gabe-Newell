@@ -21,17 +21,17 @@ $isLogged = isset($_SESSION["login"]) && $_SESSION["login"] === true;
         <nav>
             <ul>
                 <li><a href="accueil.php">Accueil</a></li>
-                <li><a href="../html/gabenewell.html">Gabe Newell</a></li>
-                <li><a href="../html/valve.html">Valve</a></li>
-                <li><a href="../html/steam.html">Steam</a></li>
+                <li><a href="gabenewell.php">Gabe Newell</a></li>
+                <li><a href="valve.php">Valve</a></li>
+                <li><a href="steam.php">Steam</a></li>
                 <li><a href="connexion.php">Connexion</a></li>
             </ul>
             <ul class="user">
                 <?php
                     if ($isLogged) {
-                        echo ("<li><a href='../php/compte.php'><img src='../images/user.png' alt='user'>$username</a></li>");
+                        echo ("<li><a href='compte.php'><img src='../images/user.png' alt='user'>$username</a></li>");
                     } else {
-                        echo ("<li><a href='../php/connexion.php'><img src='../images/user.png' alt='user'>Invité</a></li>");
+                        echo ("<li><a href='connexion.php'><img src='../images/user.png' alt='user'>Invité</a></li>");
                     }
                 ?>
             </ul>

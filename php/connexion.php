@@ -22,9 +22,9 @@
             <ul class="user">
                 <?php
                     if ($_SESSION["login"] === true) {
-                        echo ("<li><a href='../php/compte.php'><img src='../images/user.png' alt='user'>$username</a></li>");
+                        echo ("<li><a href='compte.php'><img src='../images/user.png' alt='user'>$username</a></li>");
                     } else {
-                        echo ("<li><a href='../php/connexion.php'><img src='../images/user.png' alt='user'>Invité</a></li>");
+                        echo ("<li><a href='connexion.php'><img src='../images/user.png' alt='user'>Invité</a></li>");
                     }
                 ?>
             </ul>
