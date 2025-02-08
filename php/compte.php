@@ -24,7 +24,6 @@ $isLogged = isset($_SESSION["login"]) && $_SESSION["login"] === true;
                 <li><a href="gabenewell.php">Gabe Newell</a></li>
                 <li><a href="valve.php">Valve</a></li>
                 <li><a href="steam.php">Steam</a></li>
-                <li><a href="connexion.php">Connexion</a></li>
             </ul>
             <ul class="user">
                 <?php
