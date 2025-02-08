@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
+        header("Location: connexion.php");
+        exit();
+    }
+    $username = isset($_SESSION["pseudo"]) ? $_SESSION["pseudo"] : "";
+    $isLogged = isset($_SESSION["login"]) && $_SESSION["login"] === true;
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -12,14 +21,20 @@
     <section class="menu">
         <nav>
             <ul>
-                <li><a href="../php/accueil.php">Accueil</a></li>
-                <li><a href="gabenewell.html">Gabe Newell</a></li>
-                <li><a href="valve.html">Valve</a></li>
-                <li><a href="steam.html">Steam</a></li>
-                <li><a href="../php/connexion.php">Connexion</a></li>
+                <li><a href="accueil.php">Accueil</a></li>
+                <li><a href="gabenewell.php">Gabe Newell</a></li>
+                <li><a href="valve.php">Valve</a></li>
+                <li><a href="steam.php">Steam</a></li>
             </ul>
-            <ul class="user">              
-                <li><a href="../php/compte.php"><img src="../images/user.png" alt="user">Mon Compte</a></li>
+            
+            <ul class="user">
+                <?php
+                    if ($isLogged) {
+                        echo ("<li><a href='../php/compte.php'><img src='../images/user.png' alt='user'>$username</a></li>");
+                    } else {
+                        echo ("<li><a href='../php/connexion.php'><img src='../images/user.png' alt='user'>Invité</a></li>");
+                    }
+                ?>
             </ul>
         </nav>
         <h1>Steam</h1>

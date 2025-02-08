@@ -1,10 +1,13 @@
 <?php
-    session_start();
-    if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
-        header("Location: connexion.php");
-        exit();
-    }
+session_start();
+if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
+    header("Location: connexion.php");
+    exit();
+}
+$username = isset($_SESSION["pseudo"]) ? $_SESSION["pseudo"] : "";
+$isLogged = isset($_SESSION["login"]) && $_SESSION["login"] === true;
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -35,14 +38,15 @@
         </nav>
         <h1>Mon Compte</h1>
     </section>
+
     <section class="contenu">
-        <h2>Voici les informations de ton compte:</h2>
+        <h2>Voici les informations de ton compte :</h2>
         <?php
-            echo("<h3>Nom : $username </h3>");
+            echo("<h3>Nom : $username</h3>");
         ?>
-        <input type="submit" value="Déconnecter">
-        
-        
+        <form action="deconnexion.php" method="post">
+            <input type="submit" value="Déconnecter">
+        </form>
     </section>
 </body>
 </html>

@@ -18,10 +18,9 @@
         <nav>
             <ul>
                 <li><a href="accueil.php">Accueil</a></li>
-                <li><a href="gabenewell.html">Gabe Newell</a></li>
-                <li><a href="valve.html">Valve</a></li>
-                <li><a href="steam.html">Steam</a></li>
-                <li><a href="../php/connexion.php">Connexion</a></li>
+                <li><a href="gabenewell.php">Gabe Newell</a></li>
+                <li><a href="valve.php">Valve</a></li>
+                <li><a href="steam.php">Steam</a></li>
             </ul>
             
             <ul class="user">
@@ -44,24 +43,24 @@
                     <img src="../images/GabeNewell2.png" alt="Gabe Newell">
                     <p>Découvrez le parcours de Gabe Newell, cofondateur de Valve et figure emblématique du jeu vidéo.
                     </p>
-                    <a href="gabenewell.html" class="btn">En savoir plus</a>
+                    <a href="gabenewell.php" class="btn">En savoir plus</a>
                 </div>
                 <div class="partie">
                     <h2>Valve</h2>
                     <img src="../images/ValveGames.jpeg" alt="Valve">
                     <p>Explorez l'histoire et les succès de Valve, l'un des studios les plus influents du gaming.</p>
-                    <a href="valve.html" class="btn">Découvrir</a>
+                    <a href="valve.php" class="btn">Découvrir</a>
                 </div>
                 <div class="partie">
                     <h2>Steam</h2>
                     <img src="../images/Steam.jpg" alt="Steam">
                     <p>Apprenez comment Steam a révolutionné la distribution numérique des jeux vidéo.</p>
-                    <a href="steam.html" class="btn">Voir plus</a>
+                    <a href="steam.php" class="btn">Voir plus</a>
                 </div>
                 <div class="partie">
                     <h2>Connexion</h2>
                     <p>Connectez-vous pour accéder à des contenus exclusifs</p>
-                    <a href="../php/connexion.php" class="btn">Se connecter</a>
+                    <a href="connexion.php" class="btn">Se connecter</a>
                 </div>
             </section>
         </section>
